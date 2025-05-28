@@ -1394,7 +1394,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 0;
+  padding: 20px 0;  /* ← ← ← 空きすぎ回避！！ */
 }
 
 .section-tight {
@@ -1414,7 +1414,7 @@ body {
 }
 
 .circle img {
-  width: 80%;
+  width: 100%;  /* ← 親のサイズにぴったり合わせる */
   height: auto;
   object-fit: cover;
 }
@@ -1435,23 +1435,18 @@ body {
   position: absolute;
   width: 50%;
   height: auto;
-  align-items: center;
+  pointer-events: none;
 }
 
-/* うさぎ */
 .bunny {
   top: -30px;
-  right: -10px;
- right: 2vw;
+  right: 2vw;
 }
 
-/* くま */
 .bear {
   bottom: -30px;
-  left: -10px;
- left: 2vw;
+  left: 2vw;
 }
-
 .image-row {
   display: flex;
   justify-content: center;
