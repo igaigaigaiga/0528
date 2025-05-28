@@ -1390,6 +1390,7 @@ body {
   padding: 0;
 }
 
+@media (max-width: 768px) {
 .wrapper2 {
   display: flex;
   justify-content: center;
@@ -1447,6 +1448,71 @@ body {
   bottom: -30px;
   left: 2vw;
 }
+}
+
+@media (min-width: 768px) {
+
+.wrapper2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.section-tight {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+/* 丸画像 */
+.circle {
+  position: absolute;
+  width: 260px;
+  height: auto;
+  overflow: hidden;
+  background: transparent !important;
+  border: none;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 丸画像の位置 */
+.back {
+  top: 0;
+  left: 0;
+}
+
+.front {
+  bottom: 0;
+  right: 0;
+}
+
+/* キャラ共通 */
+.char {
+  position: absolute;
+  width: 180px;
+  height: auto;
+}
+
+/* うさぎ */
+.bunny {
+  top: -30px;
+  right: -10px;
+}
+
+/* くま */
+.bear {
+  bottom: -30px;
+  left: -10px;
+}
+}
+
+
 .image-row {
   display: flex;
   justify-content: center;
