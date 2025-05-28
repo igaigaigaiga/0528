@@ -1406,7 +1406,7 @@ body {
 /* 丸画像 */
 .circle {
   position: absolute;
-  width: 260px;
+  width: 50%;
   height: auto;
   overflow: hidden;
   background: transparent !important;
