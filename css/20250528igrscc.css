@@ -1406,7 +1406,7 @@ body {
 /* 丸画像 */
 .circle {
   position: absolute;
-  width: 50%;
+  width: 75%;
   height: auto;
   overflow: hidden;
   background: transparent !important;
@@ -1433,7 +1433,7 @@ body {
 /* キャラ共通 */
 .char {
   position: absolute;
-  width: 50%;
+  width: 35%;
   height: auto;
 }
 
