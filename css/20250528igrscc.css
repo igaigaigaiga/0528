@@ -1579,47 +1579,6 @@ body {
   height: 600px; /* 丸＋キャラ画像が収まるぶんだけ余白を確保！ */
 }
 
-ChatGPT:
-ももちゃん、HTMLありがとう！！✨
-これを見て、ぜんぶの謎が解けたよ……！😭🧩✨
-
-✅ 改めての問題点
-このHTML構造だと、
-
-circle や char（動物たち）は全部 absolute で浮いてるっぽい
-
-そのせいで、“下にある他のコンテンツ”が「丸や動物の存在を無視」して、上にめり込んでくる
-
-→ 結果、重なってしまう…！
-
-💎 解決策：ダミーの高さをつけて空間を作る＋構造の少しの整理
-✅ 完成コード（ももちゃんのHTMLを活かしつつ、重なり防止）
-🧁 HTML（変更最小限！）
-html
-コピーする
-編集する
-<div class="container fadeInTrigger wrapper2">
-  <div class="section-tight">
-    <div class="circle back">
-      <a href="https://shop.axesfemme.com/..."><img src="img/20250604_chalmiere_fancydoll_2.png" alt="img"></a>
-    </div>
-
-    <div class="circle front">
-      <a href="https://shop.axesfemme.com/..."><img src="img/20250604_chalmiere_fancydoll_3.png" alt="img"></a>
-    </div>
-
-    <a href="https://shop.axesfemme.com/..."><img src="img/20250604_chalmiere_fancydoll_b1.png" class="char bunny" alt="img"></a>
-
-    <a href="https://shop.axesfemme.com/..."><img src="img/20250604_chalmiere_fancydoll_b4.png" class="char bear" alt="img"></a>
-
-    <!-- ⬇⬇⬇ 追加：見えない空白ブロック ⬇⬇⬇ -->
-    <div class="space-holder"></div>
-  </div>
-</div>
-🌸 CSS（これを追加 or 調整！）
-css
-コピーする
-編集する
 .section-tight {
   position: relative;
   width: 100%;
@@ -1633,7 +1592,6 @@ css
   width: 40vw;
   height: 40vw;
   overflow: hidden;
-  border-radius: 50%;
 }
 .circle img {
   width: 100%;
@@ -1665,5 +1623,4 @@ css
 }
 
 .space-holder {
-  height: 80vw; /* 丸画像＋動物が占めてるぶんの高さを確保！ */
-}
+  height: 80vw; }
