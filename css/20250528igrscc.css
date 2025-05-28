@@ -1399,8 +1399,8 @@ body {
 
 .section-tight {
   position: relative;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: auto;
 }
 
 /* 丸画像 */
