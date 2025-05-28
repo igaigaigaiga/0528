@@ -1433,7 +1433,7 @@ body {
 /* キャラ共通 */
 .char {
   position: absolute;
-  width: 180px;
+  width: 50%;
   height: auto;
 }
 
