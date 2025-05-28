@@ -1501,7 +1501,7 @@ body {
 .image-quad {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   padding: 10px 10px;
@@ -1513,7 +1513,7 @@ body {
   height: auto;
   display: block;
   object-fit: contain;
-  margin: 0 auto; /* ←これで中央寄せになる */
+  margin: 0 auto; 
 }
 .top-left {
   margin-top: 0px;
