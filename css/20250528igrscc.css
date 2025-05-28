@@ -1571,11 +1571,4 @@ body {
   margin: 0 auto; 
 }
 
-@media (max-width: 768px) {
-  /* 他は変えずに…帽子の画像だけ！ */
-  .top-right {
-    margin-top: 40px !important;
-    margin-left: 0 !important;
-    transform: translateX(10px); /* 少し右に動かす */
-  }
-}
+
