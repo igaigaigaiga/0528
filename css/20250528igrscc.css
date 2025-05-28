@@ -1433,7 +1433,7 @@ body {
 /* キャラ共通 */
 .char {
   position: absolute;
-  width: 60%;
+  width: 50%;
   height: auto;
   align-items: center;
 }
@@ -1442,14 +1442,14 @@ body {
 .bunny {
   top: -30px;
   right: -10px;
- right: 5vw;
+ right: 2vw;
 }
 
 /* くま */
 .bear {
   bottom: -30px;
   left: -10px;
- left: 5vw;
+ left: 2vw;
 }
 
 .image-row {
@@ -1575,3 +1575,6 @@ body {
   margin: 0 auto; 
 }
 
+.space-holder {
+  height: 600px; /* 丸＋キャラ画像が収まるぶんだけ余白を確保！ */
+}
