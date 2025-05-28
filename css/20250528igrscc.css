@@ -1406,7 +1406,7 @@ body {
 /* 丸画像 */
 .circle {
   position: absolute;
-  width: 75%;
+  width: 50%;
   height: auto;
   overflow: hidden;
   background: transparent !important;
@@ -1433,20 +1433,23 @@ body {
 /* キャラ共通 */
 .char {
   position: absolute;
-  width: 35%;
+  width: 40%;
   height: auto;
+  align-items: center;
 }
 
 /* うさぎ */
 .bunny {
   top: -30px;
   right: -10px;
+ right: 5vw;
 }
 
 /* くま */
 .bear {
   bottom: -30px;
   left: -10px;
+ left: 5vw;
 }
 
 .image-row {
@@ -1556,13 +1559,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* 間を20px空ける */
-  width: 90%; /* 全体を90%に収める */
+  gap: 20px; 
+  width: 90%; 
   margin: 0 auto;
 }
 
 .img-triple-wrapper .bax {
-  flex: 1; /* 横幅を均等にする */
+  flex: 1; 
 }
 
 .img-triple-wrapper .bax img {
@@ -1571,5 +1574,4 @@ body {
   display: block;
   margin: 0 auto; 
 }
-
 
