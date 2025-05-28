@@ -1399,14 +1399,14 @@ body {
 
 .section-tight {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 50%;
+  height: 50%;
 }
 
 /* 丸画像 */
 .circle {
   position: absolute;
-  width: 50%;
+  width: 70%;
   height: auto;
   overflow: hidden;
   background: transparent !important;
