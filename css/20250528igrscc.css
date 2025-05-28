@@ -1404,50 +1404,35 @@ body {
 }
 
 /* 丸画像 */
-.circle {
-  position: absolute;
-  width: 75%;
-  height: auto;
-  overflow: hidden;
-  background: transparent !important;
-  border: none;
-}
+@media (max-width: 768px) {
+  .section-tight {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+  }
 
- .circle-img {
+  .circle-img {
     width: 70vw !important;  /* 丸画像を画面サイズに合わせて小さく */
     height: 70vw !important;
   }
 
-/* 丸画像の位置 */
-.back {
-  top: 0;
-  left: 0;
-}
+  .back {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+  }
 
-.front {
-  bottom: 0;
-  right: 0;
-}
+  .front {
+    top: 60vw;  
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-/* キャラ共通 */
-.char {
-  position: absolute;
-  width: 35%;
-  height: auto;
+  .bunny,
+  .bear {
+    display: none; 
+  }
 }
-
-/* うさぎ */
-.bunny {
-  top: -30px;
-  right: -10px;
-}
-
-/* くま */
-.bear {
-  bottom: -30px;
-  left: -10px;
-}
-
 .image-row {
   display: flex;
   justify-content: center;
